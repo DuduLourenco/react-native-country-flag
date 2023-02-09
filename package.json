@@ -1,6 +1,6 @@
 {
   "name": "react-native-country-flag-quality",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "This is a React-Native package to display every 254 Country flags with the ISO 3166-1 alpha-2 Standard with image quality select!",
   "main": "./dist/cjs/index.js",
   "module": "./dist/index.js",

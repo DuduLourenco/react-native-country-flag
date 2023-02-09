@@ -7,7 +7,7 @@ interface Props {
   isoCode: string;
   size: number;
   style?: any;
-  quality: "low" | "default";
+  quality?: "low" | "default";
 }
 
 function capitalizeFirstLetter(str: string) {
@@ -15,7 +15,7 @@ function capitalizeFirstLetter(str: string) {
 }
 
 const CountryFlag = ({ isoCode, size, style, quality = "default" }: Props) => {
-  const flag = quality === "default" ? defaultQualityFlag : lowQualityFlag;
+  const flag = quality === "low" ? lowQualityFlag : defaultQualityFlag;
 
   // This switch case is just there because you can't name variables "in" and "do"
   switch (isoCode.toLowerCase()) {
