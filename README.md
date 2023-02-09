@@ -1,4 +1,4 @@
-# react-native-country-flag-quality-select forked by DuduLourenco
+# react-native-country-flag-quality forked by DuduLourenco
 
 This is a React-Native package to display every 254 Country flags with the [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) Standard and image uality select!
 
@@ -7,7 +7,9 @@ This is a React-Native package to display every 254 Country flags with the [ISO 
 ## Install
 
 ```bash
-npm install --save react-native-country-flag-qualiry-select
+npm install --save react-native-country-flag-quality
+or
+yarn add react-native-country-flag-quality
 ```
 
 ## Usage
@@ -15,7 +17,7 @@ npm install --save react-native-country-flag-qualiry-select
 This is a simple example how you can use the `CountryFlag` component.
 
 ```jsx
-import CountryFlag from "react-native-country-flag-qualiry-select";
+import CountryFlag from "react-native-country-flag-quality";
 
 <CountryFlag isoCode="de" size={25} quality={"low"} />
 ```
@@ -34,3 +36,5 @@ You can only use the [ISO 3166-1 alpha-2 Standard](https://en.wikipedia.org/wiki
 ## License
 
 MIT © [Yannis Hofmann](https://github.com/YannisHofmann)
+
+MIT © [Eduardo Lourenco da Silva](https://github.com/DuduLourenco)
