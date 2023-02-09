@@ -1,18 +1,22 @@
 import React from "react";
 import { Image } from "react-native";
-import * as flag from "./flags/flagsIndex";
+import * as defaultQualityFlag from "./flags/default/flagsIndex";
+import * as lowQualityFlag from "./flags/default/flagsIndex";
 
 interface Props {
   isoCode: string;
   size: number;
   style?: any;
+  quality: "low" | "default";
 }
 
 function capitalizeFirstLetter(str: string) {
   return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
-const CountryFlag = ({ isoCode, size, style }: Props) => {
+const CountryFlag = ({ isoCode, size, style, quality = "default" }: Props) => {
+  const flag = quality === "default" ? defaultQualityFlag : lowQualityFlag;
+
   // This switch case is just there because you can't name variables "in" and "do"
   switch (isoCode.toLowerCase()) {
     case "in":
