@@ -1,7 +1,7 @@
 import React from "react";
 import { Image } from "react-native";
 import * as defaultQualityFlag from "./flags/default/flagsIndex";
-import * as lowQualityFlag from "./flags/default/flagsIndex";
+import * as lowQualityFlag from "./flags/low/flagsIndex";
 
 interface Props {
   isoCode: string;
